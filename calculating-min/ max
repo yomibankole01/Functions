@@ -1,0 +1,25 @@
+function findMin() {
+    var min = Infinity;
+    var i;
+    for ( i = 0; i < arguments.length; i++) {
+        if(arguments[i] < min) {
+            min = arguments[i];
+        }
+    }   return min;
+}
+
+console.log(findMin(34, 3, 4,0, 4, 2, -6)); //this will return -6
+
+
+//to find max
+
+function findMax() {
+    var i, max = -Infinity;
+    for ( i = 0; i < arguments.length; i++) {
+        if ( arguments[i] > max ){
+            max = arguments[i];
+        }
+    }   return max;
+}
+
+console.log(findMax(34, 3, 4,0, 4, 2, -6)); //this will return 34
