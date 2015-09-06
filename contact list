@@ -1,0 +1,35 @@
+//1st creat object bob with contact details
+var bob = {
+    firstName: "Bob",
+    lastName: "Jones",
+    phoneNumber: "(650) 777-7777",
+    email: "bob.jones@example.com"
+};
+
+//2nd creat object mary with contact details
+var mary = {
+    firstName: "Mary",
+    lastName: "Johnson",
+    phoneNumber: "(650) 888 - 8888",
+    email: "mary.johnson@example.com"
+};
+
+/* 3rd store both objects(i.e contact details) in an array contacts for easy referencing*/
+var contacts = [];
+contacts[0] = bob;
+contacts[1] = mary;
+var contacts = [bob, mary];
+
+// 4th write a function to print out contact fullName
+function printPerson(person) {
+    console.log(person.firstName + " " + person.lastName);
+}
+
+/*5th write another function to list the contacts by invoking function printPerson */
+function list() {
+    var contactsLength = contacts.length;
+    for (i = 0; i < contactsLength; i++) {
+       printPerson(contacts[i]);
+    }
+}
+list();
